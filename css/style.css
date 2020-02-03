@@ -1,0 +1,285 @@
+/* Index */
+/*
+    1.0 - Universal Rules
+    2.0 - HTML Rules
+    3.0 - Body Rules
+    4.0 - Common Rules
+    5.0 - Header Rules
+    6.0 - Home Rules
+    7.0 - About Rules
+    8.0 - Portfolio Rules
+    9.0 - Services Rules
+    10.0 - Prices Rules
+    11.0 - Team Rules
+    12.0 - Contact Rules
+    13.0 - Footer Rules
+*/
+/* Common */
+/*
+    - opacity hover
+    - opacity overlay
+    - section header
+    - section padding
+    - hover effect 1 ( left to right )
+    - hover effect 2 ( top to bottom )
+    - container
+*/
+
+/* Start universal Rules */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* End universal Rules */
+
+/* Start HTML Rules */
+/* End HTML Rules */
+
+/* Start Body Rules */
+/* End Body Rules */
+
+/* Start Common Rules */
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;  
+}
+
+.clearfix {
+    clear: both;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+} 
+
+/* End Common Rules */
+
+/* Start Header Rules */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    float: left;
+    margin-top: 15px;
+}
+
+.logo i {
+    font-size: 40px;
+    color: #6195ff;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+nav {
+    float: right;
+    margin-top: 9px;
+}
+
+.navbar > li {
+    float: left;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 10px 0px;
+    font-size: 14px;
+    color:#FFF;
+    position: relative;
+}
+
+.navbar > li > a:hover {
+    opacity: 0.8;
+}
+
+.navbar > li > a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    top: calc(100% + 5px);
+    background-color: #6195ff;
+    transition: width 0.5s;
+}
+
+.navbar > li > a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: calc(100% + 5px);
+    background-color: #6195ff;
+}
+
+.navbar li a.active {
+    position: relative;
+}
+
+.navbar li a.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: calc(100% + 5px);
+    background-color: #6195ff;
+}
+
+.navbar li i {
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+
+.navbar li a:hover i {
+    transform: rotate(-90deg);
+}
+
+.navbar li ul {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #6195ff;
+    padding: 0;
+    min-width: 180px;
+    position: absolute;
+    left: 5px;
+    top: 100%;
+    transition: opacity 0.5s;
+}
+
+.navbar li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    background-color: #6195ff;
+    padding: 0;
+    min-width: 180px;
+    position: absolute;
+    left: 5px;
+    top: 100%;
+}
+
+.navbar li ul li a {
+    display: block;
+    padding: 10px 50px;
+    font-size: 14px;
+    color:#FFF;
+    position: relative;
+}
+
+.navbar li ul li a:hover {
+    background-color: #fff;
+    color:#6195ff;
+}
+
+/* End Header Rules */
+
+/* Start Home Rules */
+
+.home {
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/background/background1.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-overlay {
+    height: 100vh;
+    background-color: rgba(28, 29, 33, 0.8);
+    z-index: 1;
+}
+
+.home-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+    width: 65%;
+}
+
+.home-content h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.home-content p {
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.home-content .right-btn {
+    background-color: #6195ff;
+    color: #FFF;
+}
+
+.home-content .right-btn:hover {
+    opacity: 0.8;
+}
+
+.home-content .left-btn {
+    background-color: #FFF;
+    margin-right: 5px;
+}
+
+.home-content .left-btn:hover {
+    opacity: 0.8;
+}
+
+/* End Home Rules */
+
+/* Start About Rules */
+/* End About Rules */
+
+/* Start Portfolio Rules */
+/* End Portfolio Rules */
+
+/* Start Services Rules */
+/* End Services Rules */
+
+/* Start Prices Rules */
+/* End Prices Rules */
+
+/* Start Team Rules */
+/* End Team Rules */
+
+/* Start Contact Rules */
+/* End Contact Rules */
+
+/* Start Footer Rules */
+/* End Footer Rules */
