@@ -106,60 +106,53 @@ nav {
 
 .navbar > li {
     float: left;
-    padding: 0px 20px;
+    padding: 0px 15px;
     position: relative;
 }
 
 .navbar > li > a {
     display: block;
-    padding: 10px 0px;
+    padding: 15px 0px;
     font-size: 14px;
+    line-height: 25px;
     color:#FFF;
-    position: relative;
 }
 
 .navbar > li > a:hover {
     opacity: 0.8;
 }
 
-.navbar > li > a::before {
+.navbar > li > a::after {
     content: "";
-    position: absolute;
+    display: block;
     width: 0;
-    height: 3px;
+    height: 2px;
     left: 0;
-    top: calc(100% + 5px);
     background-color: #6195ff;
-    transition: width 0.5s;
+    transition: width 0.4s;
 }
 
-.navbar > li > a:hover::before {
+.navbar > li > a:hover::after {
     content: "";
-    position: absolute;
+    display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     left: 0;
-    top: calc(100% + 5px);
     background-color: #6195ff;
 }
 
-.navbar li a.active {
-    position: relative;
-}
-
-.navbar li a.active::before {
+.navbar li a.active::after {
     content: "";
-    position: absolute;
+    display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     left: 0;
-    top: calc(100% + 5px);
     background-color: #6195ff;
 }
 
 .navbar li i {
     font-size: 10px;
-    transition: transform 0.5s;
+    transition: transform 0.4s;
 }
 
 .navbar li a:hover i {
@@ -184,9 +177,7 @@ nav {
     background-color: #6195ff;
     padding: 0;
     min-width: 180px;
-    position: absolute;
     left: 5px;
-    top: 100%;
 }
 
 .navbar li ul li a {
