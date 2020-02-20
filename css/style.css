@@ -421,11 +421,7 @@ nav {
   visibility: visible;
 }
 
-.portfolio-sec
-  .portfolio-content:hover
-  .portfolio-content-item
-  .cat-link
-  a:hover {
+.portfolio-sec .portfolio-content:hover .portfolio-content-item .cat-link a:hover {
   opacity: 0.8;
 }
 
