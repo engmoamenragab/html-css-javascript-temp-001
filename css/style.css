@@ -291,7 +291,6 @@ nav {
 .about-content-item h3 {
   text-transform: capitalize;
   font-size: 20px;
-  color: #10161a;
   transition: color 0.5s;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
