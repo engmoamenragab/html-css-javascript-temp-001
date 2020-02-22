@@ -1010,3 +1010,38 @@ input-placeholder {
   color: var(--mn-lt-co);
 }
 /* End Footer Rules */
+
+/* Start Go Top Rules */
+#go-top {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: var(--mn-dk-co);
+  color: var(--mn-lt-co);
+  z-index: 9999;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+#go-top::after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+#go-top:hover {
+  opacity: 0.8;
+}
+/* End Go Top Rules */
