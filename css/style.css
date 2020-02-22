@@ -927,7 +927,7 @@ nav {
 }
 .contact-sec .form input:focus,
 .contact-sec .form textarea:focus {
-  box-shadow: 1px 1px 5px #487eb0;
+  box-shadow: 1px 1px 5px var(--tx-lt-co);
 }
 .contact-sec .form input::placeholder,
 .contact-sec .form textarea::placeholder {
