@@ -156,6 +156,31 @@ h6 {
   border-top: 1px solid var(--br-lt-co);
   border-bottom: 1px solid var(--br-lt-co);
 }
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .container {
+    width: 451px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 962px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 /* End Common Rules */
 
 /* Start Header Rules */
@@ -275,6 +300,16 @@ nav {
 .navbar li ul li a:hover {
   background-color: var(--mn-bg-co);
   color: var(--mn-dk-co);
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    float: none;
+    margin: auto;
+  }
+  nav {
+    display: block;
+    float: none;
+  }
 }
 /* End Header Rules */
 
