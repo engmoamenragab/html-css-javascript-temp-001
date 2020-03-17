@@ -271,6 +271,7 @@ nav {
   position: absolute;
   left: 5px;
   top: 100%;
+  z-index: 20;
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
@@ -306,35 +307,21 @@ nav {
   }
   .logo {
     float: none;
-    margin: auto;
+    margin: 0;
     text-align: center;
   }
   nav {
     float: none;
+    margin: 0;
     text-align: center;
-    margin: auto;
   }
-  .navbar > li {
-    float: none;
-    display: inline-block;
+  nav .navbar > li {
+    width: 25%;
   }
 }
 @media only screen and (max-width: 575px) {
-  header {
-    position: static;
-  }
-  .logo {
-    float: none;
-    margin: auto;
-    text-align: center;
-  }
-  nav {
-    float: none;
-    text-align: center;
-  }
-  .navbar > li {
-    float: none;
-    display: block;
+  nav .navbar > li {
+    width: 50%;
   }
 }
 /* End Header Rules */
