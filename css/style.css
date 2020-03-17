@@ -306,12 +306,17 @@ nav {
   }
   .logo {
     float: none;
-    margin: 20px auto;
+    margin: auto;
     text-align: center;
   }
   nav {
     float: none;
     text-align: center;
+    margin: auto;
+  }
+  .navbar > li {
+    float: none;
+    display: inline-block;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -320,7 +325,7 @@ nav {
   }
   .logo {
     float: none;
-    margin: 20px auto;
+    margin: auto;
     text-align: center;
   }
   nav {
@@ -876,6 +881,14 @@ nav {
 @media only screen and (max-width: 992px) {
 }
 @media only screen and (max-width: 768px) {
+  .prices-item-box {
+    padding: 20px 40px;
+  }
+  .prices-box-btn a {
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
 @media only screen and (max-width: 575px) {
   .prices-content-item {
@@ -950,9 +963,14 @@ nav {
 @media only screen and (max-width: 768px) {
 }
 @media only screen and (max-width: 575px) {
+  .testimonial {
+    height: 620px;
+    text-align: center;
+  }
   .testimonial-content-item {
     width: 100%;
     float: none;
+    margin-bottom: 180px;
   }
 }
 /* End Testimonial Rules */
