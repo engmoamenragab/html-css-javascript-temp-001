@@ -5,6 +5,7 @@ $(document).ready(function ($) {
   $(window).on("load", function () {
     $("#preloader").delay(600).fadeOut();
   });
+
   // Sticky Nav
   $(window).scroll(function () {
     if ($(this).scrollTop() > 20) {
