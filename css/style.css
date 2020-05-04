@@ -92,6 +92,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--hd-lt-co);
 }
 .clearfix {
   clear: both;
@@ -179,12 +180,17 @@ h6 {
 /* End Common Rules */
 
 /* Start Header Rules */
-header {
+header.trans {
   position: fixed;
-  background-color: var(--dk-bg-co);
-  border-bottom: 1px solid var(--tx-lt-co);
   width: 100%;
+  color: var(--hd-lt-co);
   z-index: 2;
+}
+header.lt-bg {
+  background-color: var(--mn-bg-co);
+}
+header a.dk-co {
+  color: var(--hd-dk-co);
 }
 .logo {
   float: left;
@@ -197,7 +203,6 @@ header {
 .logo a {
   font-size: 40px;
   font-weight: 600;
-  color: var(--hd-lt-co);
 }
 nav {
   float: right;
@@ -213,7 +218,6 @@ nav {
   padding: 15px 0px;
   font-size: 14px;
   line-height: 25px;
-  color: var(--hd-lt-co);
 }
 .navbar > li > a:hover {
   opacity: 0.8;
@@ -290,7 +294,6 @@ nav {
   display: block;
   padding: 10px 50px;
   font-size: 14px;
-  color: var(--hd-lt-co);
   position: relative;
 }
 .navbar li ul li a:hover {
